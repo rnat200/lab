@@ -2,8 +2,6 @@
 #include "header.h"
 
 int main() {
-
-
 	try {
 		int32_t size{  };
 		InputSize(size);
@@ -43,11 +41,13 @@ int main() {
 			DeleteArray(array);
 			break;
 		}
-
 		}
 	}
 	catch (std::invalid_argument& e)
 	{
+		std::cout << e.what();
+	}
+	catch (std::domain_error& e) {
 		std::cout << e.what();
 	}
 	catch (std::bad_alloc& e) {

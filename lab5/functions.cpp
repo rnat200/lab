@@ -43,7 +43,7 @@ double ProductOfPositive(double*& array, int32_t size) {
 		}
 	}
 	if (!has_positive) {
-		throw (std::invalid_argument("No positive elements in array"));
+		throw (std::domain_error("No positive elements in array"));
 	}
 	return product;
 }
@@ -95,7 +95,7 @@ int32_t FindLastNegativeIndex(double* array, int32_t size) {
 			return i;
 		}
 	}
-	throw std::invalid_argument("There are no negative numbers in array");
+	throw std::domain_error("There are no negative numbers in array");
 }
 
 int64_t SumOfNumbersAfterLastNegative(double* array, int32_t size, int32_t index) {
@@ -122,7 +122,6 @@ void RandFillArray(int64_t* array, int32_t& size, int64_t a, int64_t b) {
 		array[i] = a + (rand() % (b + 1 - a));
 	}
 }
-
 
 void  RandFillArray(double* array, int32_t& size, double a, double b) {
 	srand(time(NULL));
