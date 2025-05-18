@@ -1,6 +1,10 @@
 #ifndef HEADER 
 #define HEADER
 #include <iostream>
+#include <cstdlib>
+#include "header.h"
+#include <ctime>
+#include <iostream>
 const int32_t MAX_SIZE{ 100 };
 void InputSize(int32_t&);
 int32_t SelectTask();
