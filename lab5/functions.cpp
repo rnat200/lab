@@ -1,8 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-#include "header.h"
-#include <ctime>
-
 void InputNumber(double& number) {
 	std::cout << "Input real number\n";
 	std::cin >> number;
