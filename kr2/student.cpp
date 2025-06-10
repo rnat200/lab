@@ -64,6 +64,7 @@ void SortByName(Student* students, int32_t size) {
 
 void PrintStudentsFile(const Student* students, int32_t size) {
     std::ofstream fout("students.txt", std::ios::app);
+    CheckOutputFile(fout);
     for (int32_t i{}; i < size; ++i) {
         fout << students[i].name << " | : Group " << students[i].group << " |  Average mark: " << students[i].grade << "\n";
     }
