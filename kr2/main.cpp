@@ -47,11 +47,13 @@ int main() {
 				
 				break;
 			}
+			
 			case 3:
-				
+				SortByGroupAndName(students, size);
+				PrintStudents(students, size);
 				break;
 			case 4:
-				
+				PrintAverageByGroup(students, size);
 				break;
 			case 0:
 				std::cout << "Exit.\n";
