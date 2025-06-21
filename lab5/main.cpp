@@ -1,6 +1,8 @@
 #include "header.h"
 
 int main() {
+    SetConsoleCP(1251);
+    setlocale(LC_ALL, "Russian");
     int32_t size = 0;
     double* array = nullptr;
 
